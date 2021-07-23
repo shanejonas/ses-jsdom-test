@@ -21,7 +21,12 @@ module.exports = {
   // original implementations, between each test. It does not affect mocked
   // modules.
   restoreMocks: true,
-  testEnvironment: 'node',
+  testEnvironmentOptions: {
+    resources: 'usable',
+    runScripts: 'dangerously',
+  },
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.js'],
   testRegex: ['\\.test\\.(ts|js)$'],
   testTimeout: 2500,
 };

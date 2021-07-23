@@ -57,5 +57,8 @@
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false
     }
+  },
+  "dependencies": {
+    "ses": "^0.14.0"
   }
 }
